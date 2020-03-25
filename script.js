@@ -84,13 +84,9 @@ function detectDayBudget (budget) {
     let day = 30;
     a = (budget / day).toFixed();
     alert("Ежедневный бюджет: " + a);
+    return a;
 };
-detectDayBudget(money);
-
-// appData.moneyPerDay = (appData.budget / 30).toFixed();
-
-// alert("Ежедневный бюджет: " + appData.moneyPerDay);
-
+appData.moneyPerDay = detectDayBudget(money);
 
 function detectLevel (){
     if (appData.moneyPerDay < 100) {
